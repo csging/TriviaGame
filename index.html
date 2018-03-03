@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container" id="startScreen">
+        <div class="jumbotron text-center">
+            <h1>Cowboy Bebop Trivia Game</h1>
+            <div class="btnContainer">
+                <div class="container timeRemaining">
+                    <p id="time"></p>
+                </div>
+                <button type="button" class="btn btn-default btn-lg btn-primary startBtn">START</button>
+                <button type="button" class="btn btn-default btn-lg btn-primary resetBtn">RESET</button>
+            </div>
+
+            <div class="questionContainer" id="questionContainer">
+
+                <div class="large-12 questions" id="question1">
+                    <h3>Where is Jet Black from?</h3>
+                    <label class="radio-inline"><input type="radio" id="q1" name="q1" value="mars" >Mars</label>
+                    <label class="radio-inline"><input type="radio" id="q1" name="q1" value="earth" >Earth</label>
+                    <label class="radio-inline"><input type="radio" id="q1" name="q1" value="Ganymede" >Ganymede</label>
+                    <label class="radio-inline"><input type="radio" id="q1" name="q1" value="jupiter" >Jupiter</label>
+                </div>
+
+                <div class="large-12 questions" id="question2">
+                    <h3>What is Spike's weapon of choice?</h3>
+                    <label class="radio-inline"><input type="radio" id="q2" name="q2" value="Austria .45">Austria .45</label>
+                    <label class="radio-inline"><input type="radio" id="q2" name="q2" value ="Jericho 941">Jericho 941</label>
+                    <label class="radio-inline"><input type="radio" id="q2" name="q2" value= "Walther P99">Walther P99</label>
+                    <label class="radio-inline"><input type="radio" id="q2" name="q2" value="Glock 30">Glock 30</label>
+                </div>
+
+                <div class="large-12 questions" id="question3">
+                    <h3>What is Spike's alias given to him by his nomadic Native American ally?</h3>
+                    <label class="radio-inline"><input type="radio" id="q3" name="q3" value="Laughing Bull">Laughing Bull</label>
+                    <label class="radio-inline"><input type="radio" id="q3" name="q3" value="Space Cowboy" >Space Cowboy</label>
+                    <label class="radio-inline"><input type="radio" id="q3" name="q3" value="Star Warrior" >Star Warrior</label>
+                    <label class="radio-inline"><input type="radio" id="q3" name="q3" value="Swimming Bird" >Swimming Bird</label>
+                </div>
+
+                <br>
+                <br>
+                <button type="button" class="btn btn-default btn-lg btn-primary submitBtn">SUBMIT</button>
+            </div>
+            <div class="container endGame" id="endGame">
+                <h2>Cowboy Bebop Trivia Results:</h2>
+                <h3>Correct Answers: <span id="correct">0</span></h3>
+                <h3>Wrong Answers: <span id="wrong">0</span></h3>
+                <img src="assets/images/crew.jpg" alt="crew" id="crew">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js" href="assets/javascript/app.js"></script>
+</body>
+
+</html>
